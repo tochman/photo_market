@@ -3,8 +3,15 @@ Feature: Add images to the index page
   In order to chose from a variety of images
   I would like to see a selection of images on index page
 
+  Background:
+    Given the following images exists
+    | name | creator | price | print_size |
+    | Sunset | John | 17 | 200x200 |
+    | Boat   | Alex | 20 | 200x200 |
+
 
   Scenario: Shows images if there are images in the system
+    When I am on the index page
 
 
 
