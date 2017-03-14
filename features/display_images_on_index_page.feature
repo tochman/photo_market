@@ -11,10 +11,10 @@ Feature: Add images to the index page
 
   Scenario: Shows images if there are images in the system
     When I am on the index page
+    Then show me the page
     Then I should see an image named "Sunset"
     And I should see an image named "Boat"
     And I should not see "No images yet!"
-    Then show me the page
 
   Scenario: Shows message if there are no images in the system
     Given there are no images in the system
