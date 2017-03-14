@@ -7,3 +7,8 @@ Given(/^the following images exists$/) do |table|
     create(:image, attr)
   end
 end
+
+
+Given(/^there are no images in the system$/) do
+  Image.destroy_all
+end
