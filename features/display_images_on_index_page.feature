@@ -15,7 +15,6 @@ Feature: Add images to the index page
     And I should see an image named "Boat"
     And I should not see "No images yet!"
 
-
   Scenario: Shows message if there are no images in the system
     Given there are no images in the system
     And I am on the index page
