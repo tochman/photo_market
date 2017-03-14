@@ -5,6 +5,11 @@ RSpec.describe Image, type: :model do
     it 'is valid' do
       expect(create(:image)).to be_valid
     end
+
+    it 'has an file url by default' do
+      image = create(:image)
+      expect(image.file.url).to include 'my_cat.png'
+    end
   end
 
   describe 'Database Table' do
