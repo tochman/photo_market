@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   
 
-  root controller: :landing, action: :index
+  root controller: :images, action: :index
 end
