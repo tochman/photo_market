@@ -4,14 +4,13 @@ Feature: Add images to the index page
   I would like to see a selection of images on index page
 
   Background:
-    Given the following images exists
-      | name   | creator | price | print_size | file       |
-      | Sunset | John    | 17    | 200x200    | my_cat.png |
-      | Boat   | Alex    | 20    | 200x200    | my_cat.png |
+    Given the following images exist
+      | name   | creator | price | print_size | file          |
+      | Sunset | John    | 17    | 200x200    | my_sunset.png |
+      | Boat   | Alex    | 20    | 200x200    | my_boat.png   |
 
   Scenario: Shows images if there are images in the system
     When I am on the index page
-    Then show me the page
     Then I should see an image named "Sunset"
     And I should see an image named "Boat"
     And I should not see "No images yet!"
